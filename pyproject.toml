@@ -1,0 +1,19 @@
+[project]
+name = "pi-mcp-searxng"
+version = "1.0.0"
+description = "MCP server for SearXNG web search"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "mcp[cli]>=1.9",
+    "httpx>=0.28",
+]
+
+[project.scripts]
+mcp-searxng = "mcp_searxng.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mcp_searxng"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
