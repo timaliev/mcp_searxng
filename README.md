@@ -2,7 +2,7 @@
 
 MCP server for privacy-respecting web search via [SearXNG](https://github.com/searxng/searxng).
 
-> **Requires [pi-mcp-bridge](https://github.com/timaliev/pi-mcp-bridge)** to connect to pi.
+> **Requires [pi-mcp-bridge](https://github.com/timaliev/pi-mcp-bridge)** to connect to [pi](https://pi.dev).
 
 ## Prerequisites
 
@@ -44,6 +44,8 @@ In `~/.pi/agent/settings.json`:
 ```
 
 ### Standalone MCP client
+
+In `~/.mcp.json`:
 
 ```json
 {
