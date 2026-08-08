@@ -36,7 +36,12 @@ In `~/.pi/agent/settings.json`:
         "args": [],
         "env": {
           "SEARXNG_URL": "http://localhost:8080/searxng"
-        }
+        },
+        "setupCommands": [
+          "uv tool install --python 3.11 git+https://github.com/timaliev/mcp_searxng.git"
+        ],
+        "githubRepo": "timaliev/mcp_searxng",
+        "versionCommand": "mcp-searxng --version"
       }
     ]
   }
