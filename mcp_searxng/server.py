@@ -149,6 +149,11 @@ def list_engines(enabled_only: bool = True) -> dict:
 
 
 def main():
+    import sys
+    if "--version" in sys.argv:
+        from importlib.metadata import version
+        print(f"mcp-searxng {version('mcp-searxng')}")
+        return
     server.run()
 
 
