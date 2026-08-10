@@ -81,6 +81,28 @@ In `~/.mcp.json`:
 | `search_images` | Image search with thumbnails |
 | `list_engines` | List available/enabled SearXNG engines |
 
+## Error Handling
+
+All tools return a structured response with a `success` field. If SearXNG is unreachable or returns an error, `success` will be `false` with an error code and detail:
+
+| Error Code | Cause |
+|------------|-------|
+| `ECONNREFUSED` | SearXNG instance is not running or not reachable at the configured `SEARXNG_URL` |
+| `ESEARCH` | SearXNG returned an HTTP error (e.g., 500) |
+| `EPROCESSING` | Unexpected error while processing the request |
+
+Example error response:
+
+```json
+{
+  "success": false,
+  "error": "ECONNREFUSED",
+  "detail": "Cannot reach SearXNG at http://localhost:8080/searxng"
+}
+```
+
+The server does **not** crash or exit — errors are returned inline so the agent can handle them gracefully.
+
 ## Development
 
 ```bash
