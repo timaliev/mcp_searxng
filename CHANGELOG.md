@@ -12,6 +12,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [unreleased]
+
+### Features
+
+- add --version flag - ([f9d06e2](https://github.com/timaliev/mcp_searxng/commit/f9d06e293cc5893fcb89211da2fe799dfaef37c5)) - Tim Aliev
+
+### Documentation
+
+- **(readme)** document error handling behavior - ([5aae40a](https://github.com/timaliev/mcp_searxng/commit/5aae40a37dc9838af61b7bfcc064fe3bbc960e7f)) - Tim Aliev
+
+### Miscellaneous Chores
+
+- add LICENSE, update README and development.md - ([414fa4b](https://github.com/timaliev/mcp_searxng/commit/414fa4bf0cd206f2606d61dc9d594d8f754c544e)) - Tim Aliev
+- add VERSION, CHANGELOG, cliff.toml, .gitignore, CONTEXT.md, development.md - ([fb9fcb1](https://github.com/timaliev/mcp_searxng/commit/fb9fcb1c26b5592dbf077e250405d809f192643c)) - Tim Aliev
+---
+
 ## [1.0.0](https://github.com/timaliev/mcp_searxng/releases/tag/v1.0.0) - 2026-08-06
 
 ### Documentation
